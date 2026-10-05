@@ -1,0 +1,474 @@
+# Everything in Tailor's wardrobe: 24 capes, 8 wings, 12 hats, 6 pets and 8 emotes.
+# Every piece is an original design, and every piece is free.
+#
+# id      kind.name, stable forever: players' choices are saved by id
+# kind    cape, wings, hat, pet or emote
+# colors  the palette the piece is drawn with, main colour first
+# motif   the design. Capes are pixel art in Minecraft's 64 x 32 cape layout,
+#         drawn at 4x for an HD look (40 x 64 pixels a face)
+# about   the one line the app shows under the name
+# new     shows a "New" tag in the app
+
+# Capes -----------------------------------------------------------------------
+
+[[item]]
+id = "cape.ember"
+name = "Ember"
+kind = "cape"
+about = "Dark red, with a glowing flame mark."
+colors = ["#4a0e10", "#ff8a33", "#ffd36b"]
+motif = "flame"
+
+[[item]]
+id = "cape.tide"
+name = "Tide"
+kind = "cape"
+about = "Layer on layer of rolling waves."
+colors = ["#0e3a4a", "#3fb0b0", "#e9fbf8"]
+motif = "waves"
+
+[[item]]
+id = "cape.moss"
+name = "Moss"
+kind = "cape"
+about = "Deep green, with leaves climbing the edge."
+colors = ["#2f4a25", "#8ab65a", "#f2e3a0"]
+motif = "leaves"
+
+[[item]]
+id = "cape.static"
+name = "Static"
+kind = "cape"
+about = "TV noise, with a rolling bright band."
+colors = ["#3a3c40", "#a2a5aa", "#f4f5f6"]
+motif = "noise"
+
+[[item]]
+id = "cape.aurora"
+name = "Aurora"
+kind = "cape"
+about = "Soft bands of green and violet light on a night sky."
+colors = ["#0f1530", "#3fd29a", "#8e7bf0"]
+motif = "aurora"
+new = true
+
+[[item]]
+id = "cape.ink"
+name = "Ink"
+kind = "cape"
+about = "One big splash of ink on paper."
+colors = ["#f4efe2", "#1a1a22"]
+motif = "splash"
+
+[[item]]
+id = "cape.comet"
+name = "Comet"
+kind = "cape"
+about = "A bright streak with a long trail."
+colors = ["#121a3a", "#ffe9a8", "#f08a5a"]
+motif = "comet"
+
+[[item]]
+id = "cape.lantern"
+name = "Lantern"
+kind = "cape"
+about = "A paper lantern with a warm glow."
+colors = ["#2a1012", "#f08a2a", "#fff0b8"]
+motif = "lantern"
+
+[[item]]
+id = "cape.glacier"
+name = "Glacier"
+kind = "cape"
+about = "Ice, cut into cold blue facets."
+colors = ["#cfe8f3", "#4f8fbf", "#ffffff"]
+motif = "facets"
+
+[[item]]
+id = "cape.dune"
+name = "Dune"
+kind = "cape"
+about = "Sand dunes under a low sun."
+colors = ["#d9a86a", "#8f5a2c", "#ffe1a8"]
+motif = "dunes"
+
+[[item]]
+id = "cape.thistle"
+name = "Thistle"
+kind = "cape"
+about = "A violet thistle in bloom."
+colors = ["#3b2a4a", "#a77bd0", "#7fa36b"]
+motif = "thistle"
+
+[[item]]
+id = "cape.harbor"
+name = "Harbor"
+kind = "cape"
+about = "Navy and cream stripes with a rope hem."
+colors = ["#22385a", "#f1e9d6", "#c98b4a"]
+motif = "stripes"
+
+[[item]]
+id = "cape.pine"
+name = "Pine"
+kind = "cape"
+about = "Three pines under a night moon."
+colors = ["#16263a", "#2f5a3e", "#eef2f4"]
+motif = "pines"
+
+[[item]]
+id = "cape.quartz"
+name = "Quartz"
+kind = "cape"
+about = "A rose quartz cluster."
+colors = ["#f3e3ea", "#d39abb", "#ffffff"]
+motif = "quartz"
+
+[[item]]
+id = "cape.sable"
+name = "Sable"
+kind = "cape"
+about = "Dark brown with a copper border."
+colors = ["#33241f", "#c08a5b", "#e9c18f"]
+motif = "border"
+
+[[item]]
+id = "cape.marigold"
+name = "Marigold"
+kind = "cape"
+about = "Golden rays from a rust sun."
+colors = ["#f0a92c", "#8a3d12", "#ffd76a"]
+motif = "sunburst"
+
+[[item]]
+id = "cape.drift"
+name = "Drift"
+kind = "cape"
+about = "Snow falling on a quiet night."
+colors = ["#1e2a48", "#9fb4d8", "#ffffff"]
+motif = "snow"
+
+[[item]]
+id = "cape.cinder"
+name = "Cinder"
+kind = "cape"
+about = "Charcoal, with sparks rising from the hem."
+colors = ["#1e1d20", "#e4672e", "#ffd36b"]
+motif = "sparks"
+
+[[item]]
+id = "cape.fern"
+name = "Fern"
+kind = "cape"
+about = "One long fern frond."
+colors = ["#d8e8c0", "#3f7a35", "#8ab65a"]
+motif = "fern"
+
+[[item]]
+id = "cape.slate"
+name = "Slate"
+kind = "cape"
+about = "Blue grey roof tiles."
+colors = ["#4b5866", "#7d8c9c", "#2f3842"]
+motif = "tiles"
+
+[[item]]
+id = "cape.coral"
+name = "Coral"
+kind = "cape"
+about = "Pink coral in a teal sea."
+colors = ["#14595e", "#ef7d6b", "#bff0ea"]
+motif = "coral"
+
+[[item]]
+id = "cape.orchard"
+name = "Orchard"
+kind = "cape"
+about = "Red and cream check with one apple."
+colors = ["#c9473d", "#f3e2c3", "#5d8a3f"]
+motif = "check"
+
+[[item]]
+id = "cape.nimbus"
+name = "Nimbus"
+kind = "cape"
+about = "Soft clouds on a clear sky."
+colors = ["#6fa3d8", "#ffffff", "#cfe3f5"]
+motif = "clouds"
+new = true
+
+# Everyone who connects in Tailor's first month gets this one to keep.
+[[item]]
+id = "cape.founder"
+name = "Founder"
+kind = "cape"
+about = "Black, with a tape-measure band. For the first month only."
+colors = ["#1b1a17", "#f2c230", "#f4f1ea"]
+motif = "tape"
+
+# Wings -----------------------------------------------------------------------
+
+[[item]]
+id = "wings.moth"
+name = "Moth"
+kind = "wings"
+about = "Dusty moth wings with two eye spots."
+colors = ["#b9a58a", "#6e5b49", "#f1e6d2"]
+motif = "moth"
+
+[[item]]
+id = "wings.raven"
+name = "Raven"
+kind = "wings"
+about = "Layered black feathers."
+colors = ["#2a2a31", "#4b4b57"]
+motif = "feather"
+
+[[item]]
+id = "wings.maple"
+name = "Maple"
+kind = "wings"
+about = "Autumn wings in red and amber."
+colors = ["#c4502c", "#e8a04a", "#f6dcae"]
+motif = "moth"
+
+[[item]]
+id = "wings.kite"
+name = "Kite"
+kind = "wings"
+about = "Light, sharp wings in blue and cream."
+colors = ["#2f5bd3", "#f4f1ea"]
+motif = "sprite"
+
+[[item]]
+id = "wings.frost"
+name = "Frost"
+kind = "wings"
+about = "Pale blue feathers."
+colors = ["#cfe4f2", "#ffffff"]
+motif = "feather"
+
+[[item]]
+id = "wings.gull"
+name = "Gull"
+kind = "wings"
+about = "White feathers with grey tips."
+colors = ["#eceae4", "#9aa3ab"]
+motif = "feather"
+
+[[item]]
+id = "wings.dusk"
+name = "Dusk"
+kind = "wings"
+about = "Violet wings with a sunset edge."
+colors = ["#4a3f6b", "#e48a5c", "#f3c9a8"]
+motif = "moth"
+
+[[item]]
+id = "wings.sprite"
+name = "Sprite"
+kind = "wings"
+about = "Thin glassy wings."
+colors = ["#9fe0c6", "#e9fbf3"]
+motif = "sprite"
+new = true
+
+# Hats ------------------------------------------------------------------------
+
+[[item]]
+id = "hat.beret"
+name = "Beret"
+kind = "hat"
+about = "A soft navy beret, worn at an angle."
+colors = ["#2f3b55"]
+motif = "beret"
+
+[[item]]
+id = "hat.beanie"
+name = "Beanie"
+kind = "hat"
+about = "Knitted, with a cream cuff and a bobble."
+colors = ["#c4502c", "#f4f1ea"]
+motif = "beanie"
+
+[[item]]
+id = "hat.bowler"
+name = "Bowler"
+kind = "hat"
+about = "A round black bowler."
+colors = ["#26262c", "#4a3f3a"]
+motif = "bowler"
+
+[[item]]
+id = "hat.straw"
+name = "Straw"
+kind = "hat"
+about = "A flat straw hat with a red band."
+colors = ["#e3c789", "#9e2f2a"]
+motif = "boater"
+
+[[item]]
+id = "hat.bucket"
+name = "Bucket"
+kind = "hat"
+about = "A soft green bucket hat."
+colors = ["#7fa36b", "#5d7a45"]
+motif = "bucket"
+
+[[item]]
+id = "hat.topper"
+name = "Topper"
+kind = "hat"
+about = "A tall black hat with a red band."
+colors = ["#1e1e24", "#9e2f2a"]
+motif = "topper"
+
+[[item]]
+id = "hat.cloche"
+name = "Cloche"
+kind = "hat"
+about = "A close-fitting rose cloche."
+colors = ["#b07a8c", "#7a4a5c"]
+motif = "cloche"
+
+[[item]]
+id = "hat.fez"
+name = "Fez"
+kind = "hat"
+about = "Red, with a black tassel."
+colors = ["#a8322d", "#1e1e24"]
+motif = "fez"
+
+[[item]]
+id = "hat.visor"
+name = "Visor"
+kind = "hat"
+about = "A cream band with a blue visor."
+colors = ["#f4f1ea", "#2f5bd3"]
+motif = "visor"
+
+[[item]]
+id = "hat.halo"
+name = "Halo"
+kind = "hat"
+about = "A golden ring that floats."
+colors = ["#f2c230"]
+motif = "halo"
+
+[[item]]
+id = "hat.antlers"
+name = "Antlers"
+kind = "hat"
+about = "A pair of small antlers."
+colors = ["#a9773f"]
+motif = "antlers"
+new = true
+
+[[item]]
+id = "hat.crown"
+name = "Crown"
+kind = "hat"
+about = "A small golden crown."
+colors = ["#e1b84a", "#9e2f2a"]
+motif = "crown"
+
+# Shoulder pets ---------------------------------------------------------------
+
+[[item]]
+id = "pet.fox"
+name = "Fox"
+kind = "pet"
+about = "A small fox that rides on your shoulder."
+colors = ["#e07a3a", "#f4efe6", "#3a2a22"]
+motif = "fox"
+
+[[item]]
+id = "pet.owl"
+name = "Owl"
+kind = "pet"
+about = "A round owl that rides on your shoulder."
+colors = ["#9b7b5b", "#efe3cf", "#3a2a22"]
+motif = "owl"
+
+[[item]]
+id = "pet.cat"
+name = "Cat"
+kind = "pet"
+about = "A grey cat that rides on your shoulder."
+colors = ["#5b5f66", "#e9e4da", "#26262c"]
+motif = "cat"
+
+[[item]]
+id = "pet.frog"
+name = "Frog"
+kind = "pet"
+about = "A green frog that rides on your shoulder."
+colors = ["#79a85a", "#d9e8b8", "#26262c"]
+motif = "frog"
+
+[[item]]
+id = "pet.bunny"
+name = "Bunny"
+kind = "pet"
+about = "A white bunny that rides on your shoulder."
+colors = ["#e9e4da", "#e8b7b0", "#26262c"]
+motif = "bunny"
+
+[[item]]
+id = "pet.crow"
+name = "Crow"
+kind = "pet"
+about = "A black crow that rides on your shoulder."
+colors = ["#2a2a31", "#4b4b57", "#e1b84a"]
+motif = "crow"
+new = true
+
+# Emotes: hold B in the game for the wheel ------------------------------------
+
+[[item]]
+id = "emote.wave"
+name = "Wave"
+kind = "emote"
+about = "Wave hello."
+
+[[item]]
+id = "emote.dance"
+name = "Dance"
+kind = "emote"
+about = "A short dance."
+
+[[item]]
+id = "emote.sit"
+name = "Sit"
+kind = "emote"
+about = "Sit down where you stand."
+
+[[item]]
+id = "emote.point"
+name = "Point"
+kind = "emote"
+about = "Point at something."
+
+[[item]]
+id = "emote.clap"
+name = "Clap"
+kind = "emote"
+about = "Clap for your friends."
+
+[[item]]
+id = "emote.bow"
+name = "Bow"
+kind = "emote"
+about = "Take a bow."
+
+[[item]]
+id = "emote.facepalm"
+name = "Facepalm"
+kind = "emote"
+about = "For when it goes wrong."
+
+[[item]]
+id = "emote.gg"
+name = "GG"
+kind = "emote"
+about = "Good game."

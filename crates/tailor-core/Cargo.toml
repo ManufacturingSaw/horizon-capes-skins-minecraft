@@ -1,0 +1,12 @@
+[package]
+name = "tailor-core"
+description = "Login hash, squad codes, cape fitting, the catalog and the report rule behind Tailor"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+sha1 = "0.10"
+toml = "0.8"

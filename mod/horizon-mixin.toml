@@ -1,0 +1,67 @@
+# Tailor's mod for Horizon: draws capes, wings, hats, shoulder pets and emotes
+# on players who use Tailor. Everything is drawn on this screen only; the
+# Minecraft server never sees it, so it works on any 26.3 server.
+#
+# A native mod bundle for horizon-mixins, made from
+# github.com/horizon-rust/horizon-native-mod-template. The app copies this
+# folder, packed as tailor.hnmod, into <game folder>/horizon-native-mods/.
+
+[mod]
+id = "tailor"
+version = "1.2.1"
+
+[compatibility]
+# Nightly 2026-10-30. Built and tested with horizon-mixins d9c83d7 (0.6.0, plan schema 6).
+horizon_revision = "ba6344a59cb9e755b730dcf02285fc0d33b97d3c"
+
+# Once a frame: sign in the first time, batch look-ups of players in view,
+# read finished network replies. Never blocks; the network runs on a thread.
+[[injection]]
+id = "tailor_frame"
+hook = "frame"
+hook_version = 1
+kind = "HEAD"
+helper = "cosmetics.rs"
+bindings = [{ name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" }]
+
+# After a player's model is drawn: add the cape, wings, hat and pet.
+[[injection]]
+id = "tailor_player"
+# verify: the player renderer's entry point at the pinned revision, and the
+# names of its model, pose and buffer arguments.
+target = "horizon_client::render::entity::player::PlayerRenderer::render"
+kind = "RETURN"
+helper = "cosmetics.rs"
+bindings = [
+  { name = "player", ty = "&crate::render::entity::player::PlayerRenderState", value = "state" },
+  { name = "out", ty = "&mut crate::render::EntityBuffers", value = "buffers" },
+]
+
+# A Tailor cape takes the place of the vanilla cape layer for that player.
+[[injection]]
+id = "tailor_skip_cape"
+# verify: the cape layer's draw function and its early-return shape.
+target = "horizon_client::render::entity::player::CapeLayer::render"
+kind = "HEAD"
+helper = "cosmetics.rs"
+cancellable = true  # verify: how a HEAD helper returns early in plan schema 6
+bindings = [{ name = "player", ty = "&crate::render::entity::player::PlayerRenderState", value = "state" }]
+
+# Hold B for the emote wheel, let go to play the one under the pointer.
+[[injection]]
+id = "tailor_key"
+# verify: the hook point's name in native-hooks.json ("key").
+hook = "key"
+hook_version = 1
+kind = "HEAD"
+helper = "emotes.rs"
+bindings = [{ name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" }]
+
+# Draw the wheel while B is held.
+[[injection]]
+id = "tailor_hud"
+hook = "hud"
+hook_version = 1
+kind = "HEAD"
+helper = "emotes.rs"
+bindings = [{ name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" }]
