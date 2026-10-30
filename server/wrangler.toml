@@ -1,0 +1,32 @@
+# Tailor's free server on Cloudflare's free plan.
+# 1. wrangler d1 create tailor          (put the id it prints below)
+# 2. wrangler r2 bucket create tailor-capes
+# 3. wrangler d1 execute tailor --remote --file=schema.sql
+# 4. wrangler secret put SIGNING_KEY    (any long random string)
+# 5. wrangler deploy
+
+name = "tailor"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "tailor"
+database_id = ""
+
+[[r2_buckets]]
+binding = "PICTURES"
+bucket_name = "tailor-capes"
+
+[[durable_objects.bindings]]
+name = "ROOMS"
+class_name = "EmoteRoom"
+
+# The free plan runs Durable Objects on the SQLite backend.
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["EmoteRoom"]
+
+[vars]
+# Everyone who signs in before this date keeps the Founder cape.
+FOUNDER_UNTIL = "2026-12-01"
